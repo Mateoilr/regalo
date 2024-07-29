@@ -1,0 +1,9 @@
+<div *ngIf="!showConfetti">
+    <p>Tiempo restante:</p>
+    <p>{{timeLeft.days}}d {{timeLeft.hours}}h {{timeLeft.minutes}}m {{timeLeft.seconds}}s</p>
+  </div>
+  <div *ngIf="showConfetti">
+    <img src="assets/confetti.gif" alt="Confetti" />
+    <p>¡Felicidades!</p>
+  </div>
+  
